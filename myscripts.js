@@ -1,18 +1,27 @@
 
-var newNode = document.createElement("section")
-var node = document.createTextNode("This is an article. This is a new article. This is a very new article")
-newNode.appendChild(node)
-document.getElementById("p--main").appendChild(newNode)
+// var newNode = document.createElement("section");
+// var node = document.createTextNode("This is an article.");
+// newNode.appendChild(node);
+// document.getElementById("p--main").appendChild(newNode);
 
+//challenge 1
+const articleRef = document.querySelector("#main")
+console.log(articleRef)
 
-var anchor = document.getElementById("congressional-district");
-console.log(anchor)  
-var att = document.createAttribute("article");        
-att.value = "5th Congressional District";     
-anchor.setAttributeNode(att)     
+let paragraphElement = document.createElement("p")
+let paragraphTextNode = document.createTextNode("Made up mission statement")
+paragraphElement.appendChild(paragraphTextNode)
+console.log(paragraphTextNode)
 
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+// articleRef.appendChild(paragraphElement)
+
+// var anchor = document.getElementById("congressional-district");
+// console.log(anchor)  
+// var att = document.createAttribute("article");        
+// att.value = "5th Congressional District";     
+// anchor.setAttributeNode(att)     
+
+const congressionalDistAttr = document.createAttribute("congressional-district")
+congressionalDistAttr.value = "5"
+
+articleRef.setAttributeNode(congressionalDistAttr)
