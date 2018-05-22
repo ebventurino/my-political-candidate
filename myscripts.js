@@ -10,3 +10,9 @@ console.log(anchor)
 var att = document.createAttribute("article");        
 att.value = "5th Congressional District";     
 anchor.setAttributeNode(att)     
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
